@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <title>My Youtube</title>
+  <link type="text/css" rel="stylesheet" href="css/index.css">
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://apis.google.com/js/client.js?onload=onJSClientLoad"></script>
+</head>
+<body>
+  <div class="headerContainer"><span class="title">My Youtube</span></div>
+  <br/>
+  <div id="login-container" class="pre-auth">This application requires access to your YouTube account.
+    Please <a href="#" id="login-link">authorize</a> to continue.
+  </div>
+  <div class="post-auth">
+    <div class="containerList">
+      <span>Show me videos that I</span>&nbsp;<select id="comboSelection">
+        <option value="likes">Like</option>
+        <option value="uploads">Uploaded</option>
+        <option value="watchHistory">Watched</option>
+        <option value="watchLater">Want to Watch</option>
+      </select>
+    </div>
+    <div class="container">
+        <ul id="video-list"></ul> <div id="ytplayer"><span class="title">Select a video to play.</span></div>
+    </div>
+  </div>
+  <div id="message"></div>
+</body>
+</html>
